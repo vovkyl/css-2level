@@ -27,6 +27,25 @@
             </main>
           </div>
 
+          <div class="page_block">
+            <div>
+                <table>
+                    <tbody>
+                        {{#each footer}}
+                            <tr>
+                                {{#each link}}
+                                    <td>
+                                        {{text}}
+                                    </td>
+                                {{/each}}
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+
+          </div>
+
 
     <div class="page_block">
       {{> divider}}
