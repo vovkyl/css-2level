@@ -1,0 +1,92 @@
+<div class='page'>
+  <header class='header'>
+    <div class='header_container'>
+      <a href='' class='logo'>B</a>
+
+      {{#each header}}
+        <nav class='header menu'>
+          <ul class='menu_list'>
+            <li class='menu_item'>
+              <a
+                href='{{url}}'
+                class='menu_link'
+              >{{text}}</a>
+            </li>
+          </ul>
+        </nav>
+      {{/each}}
+    </div>
+  </header>
+  <main class='hero'>
+    {{#with main}}
+      <div class='hero_form'>
+        <img
+          src='{{image}}'
+          alt='photo'
+          class='hero_image'
+        />
+        <div class='hero_content'>
+          <h1 class='hero_title'>{{heading}}</h1>
+          <p class='hero_text'>{{descriotion}}</p>
+          <a
+            href='{{href}}'
+            class='button hero_button'
+          >{{button}}</a>
+        </div>
+      </div>
+    {{/with}}
+  </main>
+    <div class='card_block'>
+		{{#each featured}}
+			<div class='card'>
+				<img
+				src='{{photo}}'
+				alt='64/64'
+				class='card_image'
+				/>
+				<h2 class='card_title'>{{heading}}</h2>
+				<p class='card_text'>{{info}}</p>
+				<a
+				href='{{linkUrl}}'
+				class='button card_button'
+				>{{linkText}}</a>
+			</div>
+		{{/each}}
+    </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<br>
+<br>
+<br>
+  <div class="form">
+	{{#each actions}}
+		<div class="form_content">
+			<h2 class="form_title">{{heading}}</h2>
+			<a href="{{url}}" class="form_button">{{text}}</a>
+		</div>
+	{{/each}}
+  </div>
+  <footer>
+	<div class="footer_conteiner">
+    <div>
+		 <a href='' class='logo'>B</a>
+    
+    
+		 <span class="footer_copyright">© 2023</span>
+		 </div>
+		 {{#each footer}}
+		 	<div class="footer_title">{{title}}
+		 	{{>nav header=links isVertical=true}}
+      </div>
+		 {{/each}}
+		 
+	</div>
+  </footer>
+
+ 
+  </div>
+</div>
