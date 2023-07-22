@@ -1,12 +1,12 @@
 .page {
-  background: white;
+  background: transparent;
   padding: 15px;
 }
 
 .page_content {
   max-width: 960px;
   margin: 0 auto;
-  background: rgb(253, 244, 244);
+  background: transparent;
 }
 
 .header {
@@ -31,7 +31,8 @@
 }
 .nav_link:hover {
   text-decoration: underline;
-  color: blue;
+  /* color: blue; */
+  opacity: 50%;
 }
 .nav_vertical > .nav_link {
   display: block;
@@ -76,9 +77,9 @@
 }
 .hero_text {
   font-size: 20px;
-  color: #212529;
-  text-align: center;
-  max-width: 585px;
+  color: #1adf1a;
+  text-align: left;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -126,4 +127,63 @@
   width: 100%;
   font-size: 19 px;
   padding: 9px;
+}
+p {
+  background: grey;
+  width: 600px;
+  height: 400px;
+  overflow-x: scroll;
+}
+.plans_card:nth-child(2) {
+  visibility: hidden;
+}
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 65px;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero_text {
+  background-image: url('/img/test2.jpeg');
+  /* background-attachment: local;
+  background-position: bottom; */
+  background-size: cover;
+  border: 20px solid transparent;
+  padding: 40px;
+  color: green;
+  /* background-origin: border-box; */
+}
+/* .page {
+  background-color: transparent;
+  background-image: url('/img/test2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+.card_block {
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+
+  /* list-style-image: url('/img/test.png'); */
+  padding: 0;
+}
+.card_description_item {
+  display: list-item;
+}
+.nav_link::after {
+  /* content: url('/img/test2.jpeg'); */
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('/img/test2.jpeg');
+}
+.nav_link::after {
+  margin-left: 15px;
 }

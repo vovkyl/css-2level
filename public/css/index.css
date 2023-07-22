@@ -19,6 +19,7 @@ h1 {
   background: #533c3c;
 }
 
+
 .button {
   background: green;
   color: black
@@ -31,77 +32,75 @@ h1 {
   color: green;
  } */
 
-
-
- .card-dark {
+.card-dark {
   background: #b5b1b1;
- }
- .item {
+}
+.item {
   color: green;
- }
- /* <Для всіх перших елементів в списку> */
- li:first-child {
-  color:blueviolet;
- }
- li:last-child {
-  color:rgb(15, 13, 17);
- }
- p:first-of-type {
-  color:rgb(216, 227, 12);
- }
- p:last-of-type {
-  color:rgb(15, 1, 10);
- }
+}
+/* <Для всіх перших елементів в списку> */
+li:first-child {
+  color: blueviolet;
+}
+li:last-child {
+  color: rgb(15, 13, 17);
+}
+p:first-of-type {
+  color: rgb(216, 227, 12);
+}
+p:last-of-type {
+  color: rgb(15, 1, 10);
+}
 
- .item:only-of-type {
-  color:red;
- }
+.item:only-of-type {
+  color: red;
+}
 .item:nth-child(4) {
-  color:aqua;
+  color: aqua;
 }
 .input-dark {
   background: #e94ab4;
- }
+}
 .input-dark[required] {
   background: #654ae9;
- }
- .input-dark[type="number"] {
+}
+.input-dark[type='number'] {
   background: #4ae972;
- }
- .small img[alt~="card"] {
- height: 1000px;
- }
- a[rel~="external"] {
-  color:#4ae972;
-  }
-  button[class|="btn"] {
-    background: blueviolet;
-  }
-  /* < на початку має бути тільки btn> */
-  a[class^="btn"] {
-    background: rgb(226, 43, 70);
-  }
-  .big-text::first-line {
-    color: red;
-  }
-  .big-text::before {
-    content: "$$$$";
-    color:green;
-  }
-  .big-text::after {
-    content: "$$$$";
-    color:green;
-  }
-  *{
-    font-family: 'Roboto',sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-  }
- 
-  .block {
-    display: inline-block;
-    background: grey;
-    margin: 50 px;
-  }
+}
+.small img[alt~='card'] {
+  height: 1000px;
+}
+a[rel~='external'] {
+  color: #4ae972;
+}
+button[class|='btn'] {
+  background: blueviolet;
+}
+/* < на початку має бути тільки btn> */
+a[class^='btn'] {
+  background: rgb(226, 43, 70);
+}
+.big-text::first-line {
+  color: red;
+}
+.big-text::before {
+  content: '$$$$';
+  color: green;
+}
+.big-text::after {
+  content: '$$$$';
+  color: green;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+.block {
+  display: inline-block;
+  background: grey;
+  margin: 50 px;
+}
