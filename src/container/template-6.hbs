@@ -1,0 +1,93 @@
+
+   
+        <header class="header">
+                <a href="#test">
+                        {{> logo}}
+                </a>
+
+                <nav class='header_nav'>
+                    <div class="header_nav_right">
+                      {{>nav list=header}}
+                    </div>
+                </nav>  
+        </header>
+
+        <main class="main">
+          <div class="hero">
+            <div class="hero_info">
+              {{#with info}}
+               <div class="hero_title">{{title}}</div>
+               <p class="hero_text">{{description}}</p>
+              {{/with}}
+            </div>
+          </div>
+           {{#with form}}
+            <form class="form">
+                <div class="form_input_list">
+                    {{#each inputs}}
+                        <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" id="form-input-{{id}}"/>
+                    {{/each}}
+                </div>
+                <div class="form_checkbox_block">
+                    <input type="checkbox" name="{{checkbox.name}}">
+                    <label>{{checkbox.label}}</label>
+                </div>
+                <button type="submit"class="form_button">{{button}}</button>
+               
+                <p class="form_info">{{info}}</p>
+            </form>
+          {{/with}}
+          
+        </main>
+        {{#with updates}}
+            <div class="upd">
+                <div class="upd_title">{{title}}</div>
+                    
+                        {{#each list}}
+                        <div class="box">
+                            <img src="/img/vector.jpg" alt="" class="vector">
+                            
+                         
+                            <div class="list">
+                                <div class="list_title">{{nickname}}</div>
+                                <p class="list_text">{{description}}</p>
+                            </div>
+                        </div>  
+                        {{/each}}
+                    
+                {{#with show_all}}
+                <a href="({{url}})" class="upd_link">{{text}}</a>
+                {{/with}}
+            </div>
+        {{/with}}
+        {{#with expirience}}
+         <div class="block_exp">
+            <div class="block_badge">{{badge}}</div>
+            <h2 class="block_title">{{title}}</h2>
+           
+            <div class="block_list">
+                {{#each list}}
+                <div class="text">
+                    <strong class="block_list_title">{{name}}</strong>
+                    <p class="block_list_text">{{details}}</p>
+                </div>
+                {{/each}}
+            </div>
+         </div>
+        {{/with}}
+
+       
+      <footer class="footer" id="test">
+        <div>            
+          {{> logo}}
+          <span class="footer_copyright">Copyright 2023-2024</span>
+        </div>
+        {{#each footer}}
+        <div>
+          <span class="footer_title">{{title}}</span>
+          {{>nav header=links isVertical=true}}
+        </div>
+        {{/each}}
+      </footer>
+
+
