@@ -1,0 +1,55 @@
+
+<div class="page">
+<header class="header">
+  {{> headerDark data=this}}
+</header>
+<hero class="hero_block">
+    {{#with hero}}
+            <h1 class="hero_title">{{title}}</h1>
+            <span class="hero_text">{{description}}</span>
+        {{#with button}}
+            <a href="{{url}}" class="hero_button">{{text}}</a>
+        {{/with}}
+    {{/with}}
+</hero>
+<main class="about">
+    {{#with about}}
+        <h2 class="about_title">{{heading}}</h2>
+        <p class="about_text">{{info}}</p>
+    {{/with}}
+</main>
+<article class="article_block">
+    <h1 class="article_title">Our Articles</h1>
+    <button class="article_btn">View All</button>
+</article>
+<div class="card_block">
+
+    {{#each articles}}
+    <div class="article_card">
+    <img src="https://picsum.photos/400/200" alt="" class="card_img">
+    
+    <h2 class="card_title">{{name}}</h2>
+    <p class="card_text">{{description}}</p>
+    <button class="card_btn">Read All</button>
+   
+    </div>
+    {{/each}}
+    </div>
+
+
+
+
+
+<footer class="footer_conteiner">
+    {{#with footer}}
+    
+    <div class="pages">
+        {{#each pages}}
+        <a href="{{path}}" class="footer_list">{{name}}</a>
+        {{/each}}
+    </div>
+    
+    <p class="footer_text">{{copyright}}</p>
+    {{/with}}
+</footer>
+</div>
